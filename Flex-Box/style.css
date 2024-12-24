@@ -5,19 +5,44 @@
 .container {
   display: flex;
   /* horizontal justificaton of content */
-  justify-content: center;
+
+  /* justify-content: center;
   justify-content: space-around;
   justify-content: space-between;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+
   /* vertical alignment of items */
-  align-items: center;
+
+  /* align-items: center;
   align-items: flex-start;
-  align-items: flex-end;
+  align-items: flex-end; */
 
   /* direction of flex: Initially/ deafault row */
 
-  flex-direction: row;
+  /* flex-direction: row;
   flex-direction: row-reverse;
   flex-direction: column;
-  flex-direction: column-reverse;
+  flex-direction: column-reverse; */
+}
+
+.border {
+  margin: 30px 50px;
+  /* margin: 30px 50px 20px 10px; */
+  border-width: 7px;
+  border-color: aqua;
+  border-style: double;
+  /* border: 3px solid orange;
+  border-top: 30px;
+  border-bottom: 3px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 5px; */
+
+  border-bottom-color: blueviolet;
+  border-top-color: orange;
+  border-right-color: burlywood;
+  border-bottom-style: dotted;
+  border-top-width: 12px;
+  border-bottom-width: 12px;
 }
