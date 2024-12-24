@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  /* horizontal justificaton of content */
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  /* vertical alignment of items */
+  align-items: center;
+  align-items: flex-start;
+  align-items: flex-end;
+
+  /* direction of flex: Initially/ deafault row */
+
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
