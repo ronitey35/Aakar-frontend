@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        width: 100%;
+        border: 2px solid black;
+        max-width: 400px;
+        min-width: 100px;
+        /* min-height: 500px; */
+        max-height: 300px;
+      "
+    >
+      <div
+        style="
+          background-color: lightblue;
+          flex-grow: 1;
+          flex-basis: 200px;
+          flex-shrink: 1;
+          flex-wrap: wrap-reverse;
+        "
+      >
+        BOX 1
+      </div>
+      <div style="background-color: blue; flex: 1 1 300px">BOX 2</div>
+      <div style="background-color: red; flex: 2 1 400px">BOX 3</div>
+    </div>
+  </body>
+</html>
