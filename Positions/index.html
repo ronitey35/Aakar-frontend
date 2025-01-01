@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Properties</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* Static Position */
+      .static-box {
+        position: static;
+        background-color: lightgray;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+      }
+
+      /* Relative Position */
+      .relative-box {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        background-color: lightgreen;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid green;
+      }
+
+      /* Absolute Position */
+      .absolute-container {
+        position: relative; /* This is the reference point for absolute positioning */
+        background-color: beige;
+        height: 200px;
+        margin-bottom: 20px;
+        border: 1px solid orange;
+        text-align: center;
+      }
+      .absolute-box {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        background-color: coral;
+        padding: 10px;
+        border: 1px solid red;
+      }
+
+      /* Fixed Position */
+      .fixed-box {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid blue;
+      }
+
+      /* Sticky Position */
+      .sticky-box {
+        position: sticky;
+        top: 0px;
+        background-color: yellow;
+        padding: 10px;
+        border: 1px solid gold;
+        margin-bottom: 100px;
+      }
+
+      .content {
+        height: 500px;
+        background-color: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static-box">
+      <strong>Static:</strong> This is the default position. 
+    </div>
+
+    <div class="relative-box">
+      <strong>Relative:</strong> This element is positioned relative to its
+      normal position
+    </div>
+
+    <div class="absolute-container">
+      <strong>Absolute:</strong> The box inside this container is absolutely
+      positioned relative to its nearest positioned ancestor.
+      <div class="absolute-box">Absolute Box</div>
+    </div>
+
+    <div class="sticky-box">
+      <strong>Sticky:</strong> This element will stick to the top of the
+      viewport when you scroll past it.
+    </div>
+
+    <div class="content">
+      <strong>Scrollable Content:</strong>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+        impedit doloribus pariatur culpa provident a eligendi beatae
+        repellendus, est voluptatem ex sequi mollitia consequuntur illum
+        facilis. Reiciendis dolor impedit inventore molestias dolore atque quod,
+        veniam velit? Totam, fugit nobis. Nostrum, sint? Ex modi esse vel eius,
+        libero non nesciunt tenetur nisi minus, officia cupiditate suscipit in
+        saepe eaque sequi eligendi repellat vitae amet obcaecati, placeat
+        reprehenderit quae quaerat minima. Ipsam minima porro pariatur beatae
+        quaerat sunt, quae unde, laboriosam et adipisci natus, dignissimos ipsa.
+        Quos odit necessitatibus doloribus ea minus earum asperiores? Vel
+        cupiditate doloremque est dignissimos. Omnis, fuga porro. Et tenetur eum
+        laborum, alias quam sed temporibus totam dicta, laudantium, consequuntur
+        repellendus doloremque animi corporis modi officia corrupti iure ipsa
+        laboriosam saepe eaque nobis delectus ducimus. Nemo quasi, asperiores
+        cum numquam ab eveniet, expedita iusto eaque perferendis obcaecati quia
+        deleniti iste officia totam quisquam in maxime, tempora ullam. Esse
+        officiis explicabo illum officia voluptatibus nisi tempore nemo unde,
+        voluptas, eius aut assumenda dolorum autem quaerat numquam! Quasi sed
+        eaque magnam vitae unde omnis ullam dolores nihil odio minus
+        consequatur, dolorum quidem quae fuga quas qui laborum dignissimos
+        recusandae illum excepturi libero perspiciatis suscipit animi! Tenetur
+        obcaecati quasi ipsam optio, officiis ut ipsum eos eum facilis harum
+        iusto placeat repellat iste animi quia nobis tempore fuga? Error a
+        repellendus impedit odio animi dolores quos labore nam fugiat hic maxime
+        veritatis id quidem nulla possimus provident accusamus repudiandae esse
+        molestiae dolor sapiente, nesciunt nihil cum? Autem placeat explicabo,
+        at dicta soluta fugit commodi voluptate ut voluptates dolorem, enim
+        ullam nisi reprehenderit eos quam illo, natus corrupti illum nihil
+        corporis sit. Aut deserunt fuga sed consequuntur veritatis vitae maiores
+        tempora autem laborum blanditiis asperiores, nisi labore id, tenetur
+        praesentium odio obcaecati magnam corporis soluta est mollitia
+        voluptate. Non dolorem tempore cum nam.
+      </p>
+    </div>
+
+    <div class="fixed-box">
+      <strong>Fixed:</strong> This element is fixed to the bottom-right corner
+      and stays in place when you scroll.
+    </div>
+  </body>
+</html>
