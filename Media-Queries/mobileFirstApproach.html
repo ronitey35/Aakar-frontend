@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .links {
+      display: none;
+    }
+
+    @media (min-width: 460px) {
+      .links {
+        display: flex;
+
+        gap: 6px;
+      }
+    @media (min-width: 600px) {
+      h2{
+        font-size: 2rem;
+        color: chartreuse;
+      }
+    }
+    @media (min-width: 700px) {
+      .links{
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <nav>
+        <h1 class="logo">LOGO</h1>
+        <div class="links">
+          <h2>Home</h2>
+          <h2>About</h2>
+          <h2>Contact</h2>
+          <h2>Help us</h2>
+        </div>
+        <h3 class="sign-in">SIgn IN</h3>
+      </nav>
+    </div>
+  </body>
+</html>
