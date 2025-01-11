@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extra pos</title>
+    <style>
+      /* h1 {
+        color: blue;
+        transition: font-size 1s ease;
+      }
+      h1:hover {
+        font-size: 4rem;
+        background-color: chartreuse;
+      } */
+
+      /* h1 {
+        opacity: 0.2;
+      }
+      button:active {
+        background-color: brown;
+      }
+      input:focus {
+        background-color: rgb(248, 152, 9);
+      } */
+
+      /* .box {
+        height: 100px;
+        width: 100px;
+        box-shadow: 4px 3px 4px rgb(62, 19, 254);
+      }
+
+      h1 {
+        box-shadow: -2px -2px 4px rgb(62, 19, 254);
+      } */
+
+      /* h1 {
+        text-shadow: 2px 3px 2px red;
+      } */
+
+      /* underline */
+      /* h1 {
+        position: relative;
+        width: fit-content;
+      }
+      h1::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: blueviolet;
+        transition: width 0.9s ease;
+      }
+
+      h1:hover::before {
+        width: 100%;
+      } */
+
+      h1 {
+        position: relative;
+        width: fit-content;
+      }
+     
+      h1::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: blueviolet;
+        transition: width 0.9s ease;
+      }
+
+      h1:hover::before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Hello</h1>
+    <button>Click me</button>
+    <input type="text" /> -->
+
+    <!-- <div class="box">
+      <h1>hello</h1>
+    </div> -->
+
+    <h1>Hello</h1>
+  </body>
+</html>
