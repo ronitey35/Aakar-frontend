@@ -7,9 +7,11 @@ Conditional statements in JavaScript are used to make decisions based on specifi
 ## Types of Conditional Statements
 
 ### 1. **if Statement**
+
 Executes a block of code if a specified condition is true.
 
 **Syntax:**
+
 ```js
 if (condition) {
   // Code to execute if condition is true
@@ -17,6 +19,7 @@ if (condition) {
 ```
 
 **Example:**
+
 ```js
 let age = 18;
 if (age >= 18) {
@@ -27,9 +30,11 @@ if (age >= 18) {
 ---
 
 ### 2. **if...else Statement**
+
 Executes one block of code if the condition is true, and another block if it is false.
 
 **Syntax:**
+
 ```js
 if (condition) {
   // Code to execute if condition is true
@@ -39,6 +44,7 @@ if (condition) {
 ```
 
 **Example:**
+
 ```js
 let age = 16;
 if (age >= 18) {
@@ -51,9 +57,11 @@ if (age >= 18) {
 ---
 
 ### 3. **if...else if...else Statement**
+
 Tests multiple conditions.
 
 **Syntax:**
+
 ```js
 if (condition1) {
   // Code to execute if condition1 is true
@@ -65,23 +73,28 @@ if (condition1) {
 ```
 
 **Example:**
+
 ```js
 let score = 85;
 if (score >= 90) {
   console.log("Grade: A");
 } else if (score >= 75) {
   console.log("Grade: B");
+} else if (score >= 60) {
+  console.log("Grade: D");
 } else {
-  console.log("Grade: C");
+  
 }
 ```
 
 ---
 
 ### 4. **switch Statement**
+
 Evaluates an expression and executes code based on matching case clauses. The `break` statement is used to terminate a case and prevent fall-through to subsequent cases. If no `break` is provided, execution will continue to the next case.
 
 **Syntax:**
+
 ```js
 switch (expression) {
   case value1:
@@ -91,11 +104,12 @@ switch (expression) {
     // Code to execute if expression === value2
     break;
   default:
-    // Code to execute if no case matches
+  // Code to execute if no case matches
 }
 ```
 
 **Example:**
+
 ```js
 let day = 3;
 switch (day) {
@@ -114,12 +128,14 @@ switch (day) {
 ```
 
 **Explanation:**
+
 - Each `case` represents a possible value of the `expression`.
 - The `break` statement ensures that once a matching case is found and executed, the program exits the `switch` block.
 - Without `break`, the program will continue executing the next case, even if it doesn't match the `expression`. This is called **fall-through**.
 - The `default` case is optional and executes if no matching case is found.
 
 **Example without break (fall-through):**
+
 ```js
 let color = "red";
 switch (color) {
@@ -141,24 +157,29 @@ switch (color) {
 ## Special Cases for Conditional Statements
 
 ### 1. **Ternary Operator**
+
 A shorthand way of writing an `if...else` statement.
 
 **Syntax:**
+
 ```js
 condition ? expressionIfTrue : expressionIfFalse;
 ```
 
 **Example:**
+
 ```js
 let age = 20;
-let eligibility = (age >= 18) ? "Eligible" : "Not eligible";
+let eligibility = age >= 18 ? "Eligible" : "Not eligible";
 console.log(eligibility); // Output: Eligible
 ```
 
 ### 2. **Short-Circuit Evaluation**
+
 Logical operators can be used for conditional execution.
 
 **Example:**
+
 ```js
 let isLoggedIn = true;
 isLoggedIn && console.log("Welcome back!"); // Output: Welcome back!
@@ -169,12 +190,14 @@ console.log(username); // Output: Guest
 ```
 
 ### 3. **Nullish Coalescing Operator (`??`)**
+
 Returns the right-hand operand if the left-hand operand is `null` or `undefined`.
 
 **Example:**
+
 ```js
 let user;
-let username = user ?? "Default User";
+let username = user ?? "Guest";
 console.log(username); // Output: Default User
 ```
 
@@ -183,6 +206,7 @@ console.log(username); // Output: Default User
 ## Common Use Cases for Conditional Statements
 
 1. **Form Validation**
+
    ```js
    let username = "";
    if (username === "") {
@@ -191,6 +215,7 @@ console.log(username); // Output: Default User
    ```
 
 2. **Role-Based Access Control**
+
    ```js
    let role = "admin";
    if (role === "admin") {
