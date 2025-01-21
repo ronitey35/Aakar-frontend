@@ -21,13 +21,15 @@
 
 // hello(4, 5);
 
-// function totalAmountInCart(...items) {
-//   return items.reduce((acc, item) => acc + item, 0);
-// }
+function totalAmountInCart(...items) {
+  return items.reduce(function (acc, item) {
+    return acc + item;
+  }, 0);
+}
 
-// let totalAmount = totalAmountInCart(2, 4, 5, 4, 5, 10, 20, 50, 2, 1);
+let totalAmount = totalAmountInCart(2, 4, 5, 4, 5, 10, 20, 50, 2, 1);
 
-// console.log(totalAmount);
+console.log(totalAmount);
 
 // let totalAmount1 = totalAmountInCart(2, 4, 5, 4, 5, 10, 20, 50, 2, 1);
 
@@ -166,18 +168,18 @@
 
 // true && console.log("This is trrue");
 
-console.log(!false);
+// console.log(!false);
 
 // let a = 10;
 // let ab = a + 5;
 // console.log(ab);
 
-let a = 10;
-a += 5;
-console.log(a);
-a *= 2;
-console.log(a);
-a /= 2;
-console.log(a);
-a %= 2;
-console.log(a);
+// let a = 10;
+// a += 5;
+// console.log(a);
+// a *= 2;
+// console.log(a);
+// a /= 2;
+// console.log(a);
+// a %= 2;
+// console.log(a);
