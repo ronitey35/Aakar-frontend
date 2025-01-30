@@ -1,9 +1,9 @@
 ## What is the DOM in JavaScript?
 
-The DOM (Document Object Model) is a programming interface that represents the structure of an HTML 
+The DOM (Document Object Model) is a programming interface that represents the structure of an HTML
 or XML document. It provides a tree-like representation where each element, attribute, and piece of
- text in the document is treated as a node. Using the DOM, JavaScript can interact with and manipulate
-  the content, structure, and style of a web page.
+text in the document is treated as a node. Using the DOM, JavaScript can interact with and manipulate
+the content, structure, and style of a web page.
 
 For example:
 
@@ -141,7 +141,8 @@ The `innerHTML` property allows you to set or get the HTML content of an element
 <div id="content">Old content</div>
 <script>
   const content = document.getElementById("content");
-  content.innerHTML = "<p>New <strong>HTML</strong> Content</p>";
+  content.innerHTML = "
+  <p>New <strong>HTML</strong> Content</p>";
 </script>
 ```
 
@@ -215,6 +216,7 @@ The `replaceChild()` method replaces an existing child node with a new one.
   const newPara = document.createElement("p");
   newPara.textContent = "New Paragraph";
   const oldPara = document.getElementById("old");
+
   container.replaceChild(newPara, oldPara);
 </script>
 ```
@@ -311,7 +313,8 @@ The `removeAttribute` method removes a specified attribute.
 
 <script>
   const button = document.getElementById("btn");
-  button.removeAttribute("disabled"); // Removes the disabled attribute
+  button.removeAttribute("alt"); // Removes the disabled attribute
+  button.removeAttribute("src"); // Removes the disabled attribute
 </script>
 ```
 
@@ -386,19 +389,21 @@ The `classList.toggle` method adds a class if it doesn't exist and removes it if
     color: yellow;
     background-color: black;
   }
+  .highlights2 {
+  }
 </style>
 <script>
   const button = document.getElementById("btn");
   const text = document.getElementById("text");
   button.addEventListener("click", () => {
-    text.classList.toggle("highlight");
+    text.classList.toggle("highlight2");
   });
 </script>
 ```
 
 ---
 
-**Getting Computed Styles**
+**Getting Computed Styles**(for knowlege , not much important)
 You can retrieve the current applied styles (including those from CSS files) using getComputedStyle.
 
 ```html
@@ -424,13 +429,9 @@ Event listeners allow JavaScript to respond to user actions or events on the pag
 element.addEventListener(event, function, options);
 ```
 
-- `event:` The name of the event to listen for (e.g., `"click"`, `"keyup"`, `"submit"`).
+- `event:` The name of the event to listen for (e.g., `"iiiiiiii"`, `"keyup"`, `"submit"`).
 - `function:` The function to execute when the event is triggered.
 - `options:` Optional parameters like once (run the listener only once) or capture (control the event flow).
-
----
-
-## Common Event Types
 
 ### A. `click` Event
 
@@ -589,21 +590,6 @@ function logClick() {
 button.addEventListener("click", logClick);
 button.removeEventListener("click", logClick); // Removes the listener
 ```
-
----
-
-## 4. Event Propagation
-
-- **Event Bubbling:** Events propagate from the target element up to its ancestors.
-- **Event Capturing:** Events propagate from the document root down to the target element.
-
-You can control this behavior using the `capture` option in `addEventListener`.
-
-```javascript
-element.addEventListener("click", callback, true); // Captures the event during the capturing phase
-```
-
----
 
 ## 5. Event Object
 
