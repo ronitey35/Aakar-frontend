@@ -4,27 +4,7 @@ Welcome to the guide on **Asynchronous JavaScript** and **Advanced JavaScript** 
 
 ---
 
-## Table of Contents
-
-1. [Basic JavaScript Concepts](#basic-javascript-concepts)
-   - [setTimeout](#settimeout)
-   - [setInterval](#setinterval)
-   - [clearTimeout and clearInterval](#cleartimeout-and-clearinterval)
-2. [Introduction to Asynchronous JavaScript](#introduction-to-asynchronous-javascript)
-3. [Callbacks](#callbacks)
-4. [Promises](#promises)
-5. [Async/Await](#asyncawait)
-6. [Event Loop](#event-loop)
-7. [Advanced JavaScript Concepts](#advanced-javascript-concepts)
-   - [Closures](#closures)
-   - [Higher-Order Functions](#higher-order-functions)
-   - [Prototypes and Inheritance](#prototypes-and-inheritance)
-   - [ES6+ Features](#es6-features)
-8. [Resources](#resources)
-
----
-
-## Basic JavaScript Concepts
+## JavaScript Concepts
 
 ### setTimeout
 
@@ -238,15 +218,15 @@ The **Event Loop** is the mechanism that allows JavaScript to perform non-blocki
 
 ### Example:
 
+
+console.log("start")
+console.log("end")
+setTimeout(()=> {
+
+},5000)
+console.log("helo")
+
 ```javascript
-console.log("Start");
-
-setTimeout(() => {
-  console.log("Timeout callback");
-}, 0);
-
-console.log("End");
-
 // Output:
 // Start
 // End
