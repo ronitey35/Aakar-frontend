@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <header className="w-full">
       {/* Top bar */}
-      <div className="hidden w-full items-center justify-between bg-zinc-900 px-4 py-2 text-sm text-white md:flex">
+      <div className=" section-padding-x  hidden max-width w-full items-center justify-between bg-zinc-900 px-4 py-2 text-sm text-white md:flex">
         <div className="flex items-center gap-2">
           <HiOutlineMapPin className="h-4 w-4" />
           <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
